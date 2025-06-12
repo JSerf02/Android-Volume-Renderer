@@ -8,7 +8,7 @@ Gordon Kindleman. The rendering algorithm used in this project is the same as
 the algorithm taught in Project 3 of this course, though it is presented very
 differently from the C code used in the course so it is more idiomatic to Kotlin.
 
-The rendering code is located in the folder `/app/src/main/java/com/example/volumerenderer/`. 
+The rendering code is located in the folder `/app/src/main/java/com/example/volumerenderer`. 
 The UI of the app is rendered using *Jetpack Compose*.
 
 One notable aspect of this code is that all vector/matrix math operations use a
