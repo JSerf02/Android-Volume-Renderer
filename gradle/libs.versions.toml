@@ -1,0 +1,48 @@
+[versions]
+agp = "8.9.0"
+imagej = "2.0.0-rc-61"
+kotlin = "2.0.21"
+coreKtx = "1.10.1"
+junit = "4.13.2"
+junitVersion = "1.1.5"
+espressoCore = "3.5.1"
+lifecycleRuntimeKtx = "2.6.1"
+activityCompose = "1.8.0"
+composeBom = "2024.09.00"
+multikApi = "0.3.2"
+multikCore = "0.2.3"
+multikCoreJvm = "0.2.3"
+multikDefault = "0.2.3"
+multikDefaultVersion = "0.3.2"
+multikJvm = "0.2.3"
+multikKotlin = "0.2.3"
+
+[libraries]
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+imagej = { module = "net.imagej:imagej", version.ref = "imagej" }
+junit = { group = "junit", name = "junit", version.ref = "junit" }
+androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
+androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling = { group = "androidx.compose.ui", name = "ui-tooling" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-ui-test-manifest = { group = "androidx.compose.ui", name = "ui-test-manifest" }
+androidx-ui-test-junit4 = { group = "androidx.compose.ui", name = "ui-test-junit4" }
+androidx-material3 = { group = "androidx.compose.material3", name = "material3" }
+multik-api = { module = "org.jetbrains.kotlinx:multik-api", version = "0.1.1" }
+multik-core = { module = "org.jetbrains.kotlinx:multik-core", version.ref = "multikCore" }
+multik-core-jvm = { module = "org.jetbrains.kotlinx:multik-core-jvm", version.ref = "multikCoreJvm" }
+multik-default = { module = "org.jetbrains.kotlinx:multik-default", version.ref = "multikDefault" }
+multik-default-v032 = { module = "org.jetbrains.kotlinx:multik-default", version.ref = "multikDefaultVersion" }
+multik-jvm = { module = "org.jetbrains.kotlinx:multik-jvm", version.ref = "multikJvm" }
+multik-kotlin = { module = "org.jetbrains.kotlinx:multik-kotlin", version.ref = "multikKotlin" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+kotlin-compose = { id = "org.jetbrains.kotlin.plugin.compose", version.ref = "kotlin" }
+
